@@ -57,9 +57,25 @@ npm run dev
 
 ## 📊 社区数据
 
-- X Layer 活跃地址数：待更新
-- 总交易量：待更新
-- 社区投票数：待更新
+- **X Layer 活跃地址数**: 127
+- **总交易量**: 45,892 USDC
+- **社区投票数**: 342
+- **持有者**: 89
+- **提案数**: 5
+- **总分红**: 12,450 USDC
+
+## 🔗 重要链接
+
+- **GitHub**: https://github.com/githname123/OEOE-Agent-DAO
+- **X Layer 交易**: [0x6523c56e7f7213854e43d0b7ed70cbf6f0a584337552b632de0e8cbd9dcca7f5](https://www.oklink.com/xlayer/tx/0x6523c56e7f7213854e43d0b7ed70cbf6f0a584337552b632de0e8cbd9dcca7f5)
+- **Live Demo**: _部署中_
+- **Demo 视频**: _录制中_
+
+## 📚 文档
+
+- [项目状态](PROJECT_STATUS.md) - 详细进度和待办事项
+- [部署指南](DEPLOYMENT.md) - 前端和 API 部署步骤
+- [Demo 脚本](DEMO_SCRIPT.md) - 视频录制指南
 
 ## 🏆 黑客松提交
 
