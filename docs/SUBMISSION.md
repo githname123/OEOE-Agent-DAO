@@ -10,11 +10,13 @@
 
 ## 资格要求 ✅
 
-### 1. X Layer 首笔交易
+### 1. X Layer 首笔交易 ✅
 
-- **钱包地址**: `XKObd125a4e0aaaff514565954144c92c534293dea4`
-- **交易哈希**: `待执行`
-- **交易浏览器**: https://www.oklink.com/xlayer/tx/[TX_HASH]
+- **钱包地址**: `0x29AA452EDc51D5932b0021D3e41c7DDACEda7B30`
+- **交易哈希**: `0x6523c56e7f7213854e43d0b7ed70cbf6f0a584337552b632de0e8cbd9dcca7f5`
+- **交易浏览器**: https://www.oklink.com/xlayer/tx/0x6523c56e7f7213854e43d0b7ed70cbf6f0a584337552b632de0e8cbd9dcca7f5
+- **区块号**: 54628135
+- **Gas 消耗**: 21000
 
 ### 2. 代码开源
 

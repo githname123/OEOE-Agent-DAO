@@ -12,11 +12,11 @@
 import { ethers } from 'ethers'
 
 // X Layer RPC 配置
-const XLAYER_RPC = 'https://xlayerrpc.okx.com'
+const XLAYER_RPC = 'https://rpc.xlayer.tech'
 const XLAYER_CHAIN_ID = 196
 
 // 用户钱包地址
-const USER_ADDRESS = 'XKObd125a4e0aaaff514565954144c92c534293dea4'
+const USER_ADDRESS = '0x29AA452EDc51D5932b0021D3e41c7DDACEda7B30'
 
 async function executeTransaction() {
   try {
@@ -40,15 +40,15 @@ async function executeTransaction() {
     const feeData = await provider.getFeeData()
     console.log('⛽ Gas 价格:', ethers.formatUnits(feeData.gasPrice, 'gwei'), 'gwei')
 
-    // 创建交易
+    // 创建交易 (0 金额自转账，仅支付 gas)
     const tx = {
       from: wallet.address,
       to: USER_ADDRESS,
-      value: ethers.parseEther('0.001'), // 0.001 OKB
+      value: ethers.parseEther('0'), // 0 OKB
       chainId: XLAYER_CHAIN_ID
     }
 
-    console.log('💰 交易金额：0.001 OKB')
+    console.log('💰 交易金额：0 OKB (自转账)')
     console.log('📝 发送交易中...')
 
     // 发送交易
@@ -67,11 +67,11 @@ async function executeTransaction() {
     console.log('🔍 查看交易:', explorerUrl)
 
     // 保存交易哈希到文件
-    import fs from 'fs'
-    import path from 'path'
+    const fs = await import('fs')
+    const path = await import('path')
     
-    const txHashFile = path.join(process.cwd(), 'docs', 'tx-hash.txt')
-    fs.writeFileSync(txHashFile, txResponse.hash, 'utf8')
+    const txHashFile = path.default.join(process.cwd(), 'docs', 'tx-hash.txt')
+    fs.default.writeFileSync(txHashFile, txResponse.hash, 'utf8')
     console.log('📁 交易哈希已保存到:', txHashFile)
 
     return txResponse.hash

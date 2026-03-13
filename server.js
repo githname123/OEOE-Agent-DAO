@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json())
 
 // 用户钱包地址
-const USER_WALLET = 'XKObd125a4e0aaaff514565954144c92c534293dea4'
+const USER_WALLET = '0x29AA452EDc51D5932b0021D3e41c7DDACEda7B30'
 
 /**
  * POST /api/transaction
